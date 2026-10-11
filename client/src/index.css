@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Warm, welcoming palette */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Base colors - White / Dark Green Text */
+  --background: 0 0% 100%;
+  --foreground: 164 100% 10%;
+
+  /* Primary - Deep Logo Green (164 100% 19% or similar) */
+  --primary: 164 100% 19%;
+  --primary-foreground: 0 0% 100%;
+
+  /* Secondary - Logo Gold */
+  --secondary: 43 100% 50%;
+  --secondary-foreground: 164 100% 10%;
+
+  /* Accents */
+  --muted: 164 10% 96%;
+  --muted-foreground: 164 30% 40%;
+  --accent: 43 100% 50%;
+  --accent-foreground: 164 100% 10%;
+
+  /* System */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 164 20% 90%;
+  --input: 164 20% 90%;
+  --ring: 164 100% 19%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Adjusted for dark mode if needed, though church sites often stay light/airy */
+  --background: 164 100% 5%;
+  --foreground: 0 0% 100%;
+  --primary: 164 100% 19%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 164 19% 15%;
+  --muted-foreground: 164 20% 65%;
+  --border: 164 19% 15%;
+  --input: 164 19% 15%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20 selection:text-primary;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight text-primary;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  }
+}

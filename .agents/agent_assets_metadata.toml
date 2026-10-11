@@ -1,0 +1,19 @@
+uploads = []
+
+[[generated]]
+id = "p335NbLz9edLmgdawKrL5"
+uri = "file://client/public/church-favicon.png"
+type = "image"
+title = "Church favicon logo"
+
+[[generated]]
+id = "rsO_tSXa9av-xGwR1BIDB"
+uri = "file://client/public/church-favicon-home.png"
+type = "image"
+title = "Church logo favicon"
+
+[[outputs]]
+id = "Le76yoNCyEZr33gYxUtGu"
+uri = "file://adelanto-bilingual-sda-church.tar.gz"
+type = "unspecified"
+title = "Adelanto Bilingual SDA Church - Código fuente"
