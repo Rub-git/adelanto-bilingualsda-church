@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Globe } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import sdaLogo from "@assets/seventh-day-adventist-church_1768147458845.jpg";
+import sdaLogo from "/church-logo.png";
 
 import { useLanguage } from "@/hooks/use-language";
 

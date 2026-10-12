@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Youtube, MapPin, Mail, Phone } from "lucide-react";
 import { Link } from "wouter";
-import sdaLogo from "@assets/seventh-day-adventist-church_1768147458845.jpg";
+import sdaLogo from "/church-logo.png";
 import { useLanguage } from "@/hooks/use-language";
 
 export function Footer() {
